@@ -1,0 +1,167 @@
+body {
+    background-color: #ffeb7f;
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+}
+
+.main-header {
+    padding: 27px 0 0px; 
+}
+
+.text {
+    color: #c44d21;
+    text-align: center;
+    font-weight: bold;
+}
+
+h1 {
+    margin-top: 0;
+    text-shadow: 2px 2px #fffbd1;   
+}
+
+.toggles {
+    width: 100px;
+    margin: 0 auto;
+}
+
+.btn-to-dark {
+    border: none;
+    width: 100%;
+    outline: none;
+}
+
+table {
+    border-collapse: collapse;
+    margin: 25px auto;
+    height: 450px;
+    width: 30%;
+    min-width: 350px;
+    background-color: #ffeb7f;
+}
+
+.nums-and-manip {
+    background-color: #e2d7a1;
+}
+
+td {
+    width: 25%; 
+}
+
+.result {
+    text-align: right;
+    float: right;
+    border: none;
+    font-size: 2.6rem;
+    color: white;
+    padding-right: 10px;
+    outline: none;
+}
+
+.td-result {
+    height: 90px;
+    border-radius: 15px 15px 0 0;
+    background-color: #33231d;
+}
+
+.manipulation,
+.number,
+.equality,
+.arithmetics {
+    width: 100%;
+    height: 100%;
+    border: none;
+    font-size: 1.5rem;
+    outline: none;
+}
+
+.td-invert-sign,
+.invert-sign {
+    border-radius: 0 0 0 15px;
+}
+
+button:hover {
+    background-color: #e2d7a1;
+    transition: all 0.2s;
+}
+
+.manipulation {
+    background-color: #efebd7;
+}
+
+.arithmetics {
+    background-color: #ff8928;
+}
+
+.arithmetics:hover {
+    background-color: #e56e30;
+}
+
+.equality {
+    background-color: #e54f19;
+    border-radius: 0 0 15px 0;
+}
+
+.equality:hover {
+    background-color: #c63f0d;
+}
+
+
+
+.number {
+    background-color: white;
+}
+
+.selected {
+    background-color: #e56e30;
+}
+
+.main-footer {
+    font-size: 1.2rem;
+}
+
+.credits {
+    font-weight: normal;
+}
+
+/* ************************************** */
+/* Dark Theme */
+/* ************************************** */
+
+.body-dark-theme {
+    background-color: #24253d;
+   
+}
+
+.text-dark-theme {
+    color: #f2b163;
+    text-shadow: none;
+}
+
+.table-dark-theme {
+    background-color: #24253d;
+}
+
+.result-dark-theme {
+    background-color: #100e16;
+    color: #dbdefc;
+}
+
+.number-dark-theme {
+    background-color: #7d82e0;
+    color: #dbdefc;
+}
+
+.manipulation-dark-theme {
+    background-color: #d5d6e8;
+}
+
+.manipulation-dark-theme:hover,
+.number-dark-theme:hover {
+    background-color: #585c8e;
+    color: #dbdefc;
+}
+
+.nums-and-manip-dark {
+    background-color: #585c8e;
+}
+
