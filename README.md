@@ -1,5 +1,5 @@
 # javascript calculator
-ES5 syntax
+Written with ES5 syntax for educational purposes
 
 Ops: 
 
