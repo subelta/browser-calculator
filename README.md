@@ -1,5 +1,5 @@
 # javascript calculator
-ES5
+ES5 syntax
 
 Ops: 
 
