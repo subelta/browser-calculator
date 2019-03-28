@@ -2,32 +2,44 @@ body {
     background-color: #ffeb7f;
     margin: 0;
     font-family: 'Lato', sans-serif;
+    transition: all 0.2s;
 }
 
 .main-header {
-    padding: 27px 0 0px; 
+    padding: 27px 0 20px; 
 }
 
 .text {
     color: #c44d21;
     text-align: center;
-    font-weight: bold;
 }
 
 h1 {
     margin-top: 0;
-    text-shadow: 2px 2px #fffbd1;   
 }
 
-.toggles {
-    width: 100px;
-    margin: 0 auto;
+button {
+    transition: all 0.2s;
+    outline: none;
+    width: 100%;
+    height: 100%;
+    border: none;
+    font-size: 1.5rem;
 }
 
 .btn-to-dark {
-    border: none;
-    width: 100%;
-    outline: none;
+    display: block;
+    margin: 0 auto;
+    width: 120px;
+    height: 32px;
+    font-size: 0.9rem;
+    background-color: #585c8e;
+    color: white;
+    border-radius: 10px;
+}
+
+.btn-to-dark:hover {
+    background-color: #808bcc;
 }
 
 table {
@@ -37,6 +49,7 @@ table {
     width: 30%;
     min-width: 350px;
     background-color: #ffeb7f;
+    transition: all 0.2s;
 }
 
 .nums-and-manip {
@@ -54,24 +67,12 @@ td {
     font-size: 2.6rem;
     color: white;
     padding-right: 10px;
-    outline: none;
 }
 
 .td-result {
     height: 90px;
     border-radius: 15px 15px 0 0;
     background-color: #33231d;
-}
-
-.manipulation,
-.number,
-.equality,
-.arithmetics {
-    width: 100%;
-    height: 100%;
-    border: none;
-    font-size: 1.5rem;
-    outline: none;
 }
 
 .td-invert-sign,
@@ -105,8 +106,6 @@ button:hover {
     background-color: #c63f0d;
 }
 
-
-
 .number {
     background-color: white;
 }
@@ -119,49 +118,49 @@ button:hover {
     font-size: 1.2rem;
 }
 
-.credits {
-    font-weight: normal;
-}
 
-/* ************************************** */
-/* Dark Theme */
-/* ************************************** */
+
+/* ************************************** Dark Theme ***************************************/
 
 .body-dark-theme {
     background-color: #24253d;
-   
+    transition: all 0.2s;
 }
 
 .text-dark-theme {
     color: #f2b163;
     text-shadow: none;
+    transition: all 0.2s;
 }
 
 .table-dark-theme {
     background-color: #24253d;
+    transition: all 0.2s;
 }
 
 .result-dark-theme {
     background-color: #100e16;
     color: #dbdefc;
+    transition: all 0.2s;
 }
 
 .number-dark-theme {
     background-color: #7d82e0;
     color: #dbdefc;
+    transition: all 0.2s;
 }
 
 .manipulation-dark-theme {
     background-color: #d5d6e8;
+    transition: all 0.2s;
 }
 
 .manipulation-dark-theme:hover,
-.number-dark-theme:hover {
-    background-color: #585c8e;
-    color: #dbdefc;
-}
-
+.number-dark-theme:hover,
 .nums-and-manip-dark {
     background-color: #585c8e;
+    color: #dbdefc;
+    transition: all 0.2s;
 }
+
 

@@ -18,6 +18,8 @@ reset();
 
 
 //Setting Click handlers on number buttons
+//Checking for default 0 value or previous result
+//Comparing to input limit 
 for (var i = 0; i < numbers.length; i++) {
     numbers[i].addEventListener("click", function() {
         if ((inputField.textContent === "0") || (needToEraseInput))  {
@@ -34,6 +36,7 @@ for (var i = 0; i < numbers.length; i++) {
 
 
 //Setting Click handlers on arithmetics (inculding auto computation of previous expression)
+//Styling button as pressed
 for (var i = 0; i < arithmetics.length; i++) {
     arithmetics[i].addEventListener("click", function() {
         computation();
@@ -51,11 +54,8 @@ for (var i = 0; i < arithmetics.length; i++) {
 
 //invert sign button
 invertSign.addEventListener("click", function() {
-    if (inputField.textContent[0] === '-') {
-        inputField.textContent = inputField.textContent.slice(1);
-    } else {
-        inputField.textContent = '-' + inputField.textContent;
-    }
+    var inp = inputField.textContent;
+    inputField.textContent = (inp[0] === '-') ? inp.slice(1) : '-' + inp;
 });
 
 
@@ -99,38 +99,38 @@ function reset() {
 function computation() {
     secondNumber = Number(inputField.textContent);
     var result;
-    if (pickedSign) {
+    if (pickedSign) { 
         switch (pickedSign.id) {
-            case "addition":
+            case "+":
                 result = firstNumber + secondNumber;
                 break;
-            case "subtraction": 
+            case "-": 
                 result = firstNumber - secondNumber;
                 break;
-            case "division": 
+            case "/": 
                 result = firstNumber / secondNumber;
                 break;
-            case "multiplication": 
+            case "*": 
                 result = firstNumber * secondNumber;
         } 
         pickedSign.classList.remove("selected");
         pickedSign = null;
-    } else {
+    } else { //if no sign picked, 
         result = secondNumber;
     }
-    result = checkSpecialValues(result);
+    result = checkSpecialValues(result); //Checking for JavaScript computational errors 
     firstNumber = null;
     secondNumber = null;
     needToEraseInput = true;
 
-    if (result > 9999999999999999) {
+    if (result > 9999999999999999) { //Max possible number on the screen
         result = result.toPrecision(12);
     }
     inputField.textContent = (!isFinite(result)) ? "ERROR" : result;
     result = null;
 }
 
-//To avoid JS computational errors
+
 function checkSpecialValues(result) {
     var arr = [0.1, 0.2];
     if (arr.includes(firstNumber) && arr.includes(secondNumber)) {

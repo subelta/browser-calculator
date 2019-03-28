@@ -9,10 +9,7 @@
 <body>
     <header class="main-header">
         <h1 class='text'>Simple JavaScript Calculator</h1>
-        <div class="toggles">
-            <button class="btn-to-dark">Dark Theme</button>
-        </div>
-        <p class="text version">V 2.0</p>
+        <button class="btn-to-dark">Dark Theme</button>
     </header>
     <main>
         <table class="calculator">
@@ -22,36 +19,36 @@
             <tr>
                 <td  class="nums-and-manip" colspan="2"><button id="clear-all" class="manipulation">C</button></td>
                 <td class="nums-and-manip"><button id="clear-input" class="manipulation">CE</button></td>
-                <td><button id="division" class="arithmetics">/</button></td>
+                <td><button id="/" class="arithmetics"><img src="icons/divide.svg" alt='/' width=23px></button></td>
             </tr>                
             <tr>
                 <td class="nums-and-manip"><button class="number">7</button></td>
                 <td class="nums-and-manip"><button class="number">8</button></td>
                 <td class="nums-and-manip"><button class="number">9</button></td>
-                <td><button id="multiplication" class="arithmetics">*</button></td>
+                <td><button id="*" class="arithmetics"><img src="icons/x.svg" alt="*" width=18px></button></td>
             </tr>                
             <tr>
                 <td class="nums-and-manip"><button class="number">4</button></td>
                 <td class="nums-and-manip"><button class="number">5</button></td>
                 <td class="nums-and-manip"><button class="number">6</button></td>
-                <td><button id="subtraction" class="arithmetics">-</button></td>
+                <td><button id="-" class="arithmetics"><img src="icons/minus.svg" alt='-' width=22px></button></td>
             </tr>                           
             <tr>
                 <td class="nums-and-manip"><button class="number">1</button></td>
                 <td class="nums-and-manip"><button class="number">2</button></td>
                 <td class="nums-and-manip"><button class="number">3</button></td>
-                <td><button id="addition" class="arithmetics">+</button></td>
+                <td><button id="+" class="arithmetics"><img src="icons/plus.svg" alt="+" width=22px></button></td>
             </tr>                            
             <tr>
                 <td class="nums-and-manip td-invert-sign"><button class="manipulation invert-sign">+/-</button></td>
                 <td class="nums-and-manip"><button class="number">0</button></td>
                 <td class="nums-and-manip"><button id="comma" class="manipulation">,</button></td>
-                <td><button class="equality">=</button></td>
+                <td><button class="equality"><img src="icons/equals.svg" alt='=' width=22px></button></td>
             </tr>                           
         </table>
     </main>
     <footer class="main-footer">
-        <p class="credits text">Made by Subelta</p>
+        <p class="credits text">made by subelta</p>
     </footer>
     <script src="darkTheme.js"></script>
     <script src="calculation.js"></script>
