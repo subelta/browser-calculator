@@ -1,7 +1,7 @@
 # javascript calculator
 Written with ES5 syntax for educational purposes
 
-Ops: 
+Operations: 
 
 plus, minus, multiplication, division, invert sign, fractions, clear input, clear all
 
