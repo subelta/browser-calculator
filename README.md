@@ -1,4 +1,9 @@
-[# javascript calculator](https://subelta.github.io/browser-calculator/)
+# javascript calculator
+
+
+[hosted here](https://subelta.github.io/browser-calculator/)
+
+
 Written with ES5 syntax for educational purposes
 
 Operations: 
