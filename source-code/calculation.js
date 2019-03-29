@@ -133,7 +133,7 @@ function computation() {
 
 function checkSpecialValues(result) {
     var arr = [0.1, 0.2];
-    if (arr.includes(firstNumber) && arr.includes(secondNumber)) {
+    if ((arr.indexOf(firstNumber) >= 0) && (arr.indexOf(secondNumber) >= 0)) {
         return result.toFixed(1);
     }
     return result;
